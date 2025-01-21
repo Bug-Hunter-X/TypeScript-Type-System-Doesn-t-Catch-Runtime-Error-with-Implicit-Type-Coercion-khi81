@@ -1,0 +1,3 @@
+# TypeScript Type System Limitation: Implicit Type Coercion
+
+This example demonstrates a scenario where TypeScript's type system fails to prevent a runtime error due to implicit type coercion.  The `add` function is declared to accept two numbers, but the code calls it with a number and a string.  TypeScript doesn't flag this as an error, leading to unexpected string concatenation at runtime instead of numerical addition.  This highlights a limitation of the type system when dealing with implicit conversions. The solution shows how to improve type safety.
